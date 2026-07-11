@@ -50,6 +50,7 @@ QA-Final-Project
 │ ├── pages/
 │ └── reports/
 ├── Screenshots/
+├── Videos/
 ├── Reports/
 └── Documentation/
 ```
