@@ -16,10 +16,7 @@ The project covers:
 - API Testing with Postman
 - JavaScript Programming
 - Cypress End-to-End Automation
-- Page Object Model (POM)
-- Custom Commands
-- Fixtures
-- GitHub Actions CI
+
 
 ---
 
