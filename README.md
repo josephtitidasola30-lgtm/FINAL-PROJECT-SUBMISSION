@@ -146,6 +146,16 @@ Automated scenarios include:
   
 ---
 
+## Challenges
+
+During the development of this project, I encountered several challenges, including:
+
+- Writing comprehensive test cases that covered positive, negative, and edge scenarios.
+- Identifying and documenting bugs with clear, reproducible steps and appropriate severity levels.
+- Creating reliable API tests by validating response status codes, headers, and JSON structures.
+- Organizing project documentation and test artifacts into a clear, maintainable repository structure.
+
+Overcoming these challenges improved my attention to detail and strengthened my understanding of software quality assurance best practices.
 
 ## Lessons Learned
 
