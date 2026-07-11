@@ -27,8 +27,6 @@ The project covers:
 - Postman
 - Git
 - GitHub
-- GitHub Actions
-- Mochawesome Reporter
 - Visual Studio Code
 
 ---
@@ -52,14 +50,13 @@ QA-Final-Project
 │ ├── pages/
 │ └── reports/
 ├── Screenshots/
-├── Videos/
 ├── Reports/
 └── Documentation/
 ```
 
 ---
 
-## ✅ Scope of Testing
+## ✅ Test strategy
 
 ### Manual Testing
 
@@ -85,17 +82,6 @@ Documented defects include:
 - Incorrect login validation
 - Password visibility issue
 - Login button remains active during processing
-
-Each bug report contains:
-
-- Bug ID
-- Summary
-- Environment
-- Steps to Reproduce
-- Expected Result
-- Actual Result
-- Severity
-- Priority
 
 ---
 
@@ -156,54 +142,10 @@ Automated scenarios include:
 - Successful Checkout Flow
 
 ### Logout
-
 - User Logout
-
-Automation follows:
-
-- Page Object Model (POM)
-- Custom Commands
-- Fixtures
-- Assertions
-- beforeEach Hooks
-
+  
 ---
 
-## 📊 Reports
-
-Generated:
-
-- Cypress Screenshots
-- Test Videos
-- Mochawesome Reports
-
----
-
-## 🚀 Running the Project
-
-### Clone Repository
-
-```bash
-git clone https://github.com/yourusername/qa-final-project.git
-```
-
-### Install Dependencies
-
-```bash
-npm install
-```
-
-### Open Cypress
-
-```bash
-npx cypress open
-```
-
-### Run Headless
-
-```bash
-npx cypress run
----
 
 ## Lessons Learned
 
