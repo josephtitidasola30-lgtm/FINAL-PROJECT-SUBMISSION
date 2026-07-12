@@ -1,88 +1,57 @@
-# SauceDemo Cypress Automation Project
+# Cypress SauceDemo Automation Testing Project
 
-## Project Title
+## Project Description
 
-SauceDemo Website Automation Testing Using Cypress
+This project contains automated end-to-end tests created using Cypress for the SauceDemo website.
 
----
+The tests cover login, product selection, cart functionality, checkout process, and logout.
 
-## Objective
+## Setup Instructions
 
-The objective of this project is to automate the testing of the SauceDemo e-commerce website using Cypress. The project validates the core functionalities of the application, including Login, Inventory, Cart, Checkout, and Logout, while applying software testing best practices such as the Page Object Model (POM), Fixtures, Custom Commands, and Mochawesome Reporting.
+### Prerequisites
 
----
+Make sure you have the following installed:
 
-## Tools Used
-
-- Cypress
-- JavaScript
 - Node.js
-- Visual Studio Code
-- Git & GitHub
-- Mochawesome Reporter
+- npm
 
----
+### Installation Steps
 
-## Test Strategy
+1. Clone the repository:
 
-The automation framework was developed using the **Page Object Model (POM)** to improve code reusability and maintainability. Test data was stored in **Fixtures**, while reusable actions were implemented as **Custom Commands**.
+git clone <repository-url>
 
-The following features were automated:
+2. Navigate into the project folder:
 
-- Login
-  - Valid Login
-  - Invalid Login
-  - Empty Fields
-- Inventory
-  - Verify products load successfully
-  - Validate product names
-- Cart
-  - Add product
-  - Remove product
-  - Verify cart count
-- Checkout
-  - Complete checkout
-  - Validate successful order
-- Logout
-  - Verify successful logout
+cd <project-folder-name>
 
-Screenshots, videos, and Mochawesome reports were generated after test execution.
+3. Install project dependencies:
 
----
+npm install
 
-## Challenges
+## Execution Instructions
 
-During the development of this project, a few challenges were encountered:
+To open Cypress Test Runner, run:
 
-- Resolving Cypress selector errors.
-- Implementing the Page Object Model correctly.
-- Fixing fixture loading issues.
-- Debugging Custom Commands.
-- Configuring Mochawesome reporting.
-- Understanding Cypress assertions and asynchronous commands.
+npx cypress open
 
-These challenges were resolved through debugging, testing, and continuous learning.
+Select E2E Testing and choose a browser to execute the tests.
 
----
+To run Cypress tests in headless mode, run:
 
-## Lessons Learned
+npx cypress run
 
-This project improved my understanding of:
+## Test Reporting
 
-- Cypress automation testing
-- JavaScript fundamentals
-- Page Object Model (POM)
-- Fixtures
-- Custom Commands
-- Assertions
-- Test automation best practices
-- Generating test reports using Mochawesome
-- Using Git and GitHub for version control
+Mochawesome reporting is configured in this project to generate test execution reports.
 
----
+The reports provide information about:
+- Passed test cases
+- Failed test cases
+- Test execution results
 
-## Author
+## Application Under Test
 
-**Joseph Titilayo Dasola**
+SauceDemo Website:
 
-Software Quality Assurance (QA) Student
+https://www.saucedemo.com/

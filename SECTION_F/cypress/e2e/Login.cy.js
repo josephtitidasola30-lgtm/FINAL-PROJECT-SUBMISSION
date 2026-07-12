@@ -1,18 +1,24 @@
-import LoginPage from '../pages/LoginPage'
+import LoginPage from '../Pages/LoginPage'
 
 const loginPage = new LoginPage()
 
 describe('SauceDemo Login Feature', () => {
 
     beforeEach(() => {
-        cy.visit('https://www.saucedemo.com/')
+        cy.visit('/')
     })
 
     it('Should login successfully with valid credentials', () => {
 
-        loginPage.username().type('standard_user')
-        loginPage.password().type('secret_sauce')
+        // Intercept all network requests
+        cy.intercept('**').as('networkRequest')
+
+        loginPage.username().type(Cypress.env('username'))
+        loginPage.password().type(Cypress.env('password'))
         loginPage.loginButton().click()
+
+        // Wait for the first network request
+        cy.wait('@networkRequest')
 
         cy.url().should('include', '/inventory.html')
         cy.get('.title').should('have.text', 'Products')
@@ -23,7 +29,7 @@ describe('SauceDemo Login Feature', () => {
 
     it('Should not login with invalid credentials', () => {
 
-        loginPage.username().type('standard_user')
+        loginPage.username().type(Cypress.env('username'))
         loginPage.password().type('wrong_password')
         loginPage.loginButton().click()
 

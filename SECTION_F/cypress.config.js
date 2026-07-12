@@ -16,9 +16,13 @@ module.exports = defineConfig({
 
     setupNodeEvents(on, config) {
       require("cypress-mochawesome-reporter/plugin")(on);
-
       return config;
     },
+  },
+
+  env: {
+    username: "standard_user",
+    password: "secret_sauce"
   },
 
   video: true,
